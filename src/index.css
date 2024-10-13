@@ -1,0 +1,206 @@
+body {
+    color: #e0f7ff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login page */
+.container {
+    margin-top: 70px;
+    color: #002a5a;
+    background: rgba(230, 250, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00000077;
+}
+
+.container h1 {
+    padding: 15px;
+    font-size: 42px;
+    font-weight: bold;
+    color: #2980b9;
+    opacity: 0;
+    animation: slideIn 0.4s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+label {
+    float: left;
+    margin-left: 15%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #003f7f;
+    opacity: 0;
+    animation: fadeInLabel 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeInLabel {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container input {
+    background-color: #ace5ff;
+    border: none;
+    color: #003f7f;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 15%;
+    border-radius: 15px;
+    width: 70%;
+    transition: background-color 0.5s ease;
+    opacity: 0;
+    animation: fadeInInput 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInInput {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container input::placeholder {
+    color: #4d4d4d;
+}
+
+.container .btn {
+    background: linear-gradient(to right, #007bff, #00a2ff);
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    transition: background 0.3s ease-in-out;
+    width: 30%;
+    margin-bottom: 20px;
+    color: #ffffff;
+    opacity: 0;
+    animation: fadeInButton 1s ease-in-out forwards;
+}
+
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container .btn:hover {
+    background: linear-gradient(to left, #007bff, #00a2ff);
+}
+
+/* Navigation bar */
+nav {
+    background-color: rgb(37, 136, 241);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav .navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav .nav-item {
+    margin: 0 10px;
+}
+
+nav .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+nav .nav-link:hover {
+    background-color: #65f5ff80;
+    color: #000000;
+}
+
+/* QR Reader */
+.container .alert {
+    font-size: 24px;
+    width: 90%;
+    margin-left: 5%;
+    color: #002a5a;
+    background-color: #d9f3ff;
+}
+
+.container #reader button {
+    font-size: 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.container #reader button:hover {
+    background-color: #005bb5;
+}
+
+.container #reader li {
+    text-decoration: none;
+    color: #002a5a;
+}
+
+/* Sweet alert */
+.swal-text {
+    background-color: #E0F7FF;
+    padding: 17px;
+    border: 1px solid #A0D9FF;
+    display: block;
+    margin: 22px;
+    text-align: center;
+    color: #003f7f;
+    font-size: 16pxpx;
+}
+
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.swal-button:hover {
+    background-color: #005bb5;
+    color: #ffffff;
+}

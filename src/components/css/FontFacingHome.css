@@ -1,0 +1,55 @@
+.font-facing-home {
+    max-width: 100%;
+    padding: 0 15px;
+    max-height: 550px;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.qr-image {
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+@media (max-width: 767px) {
+    .font-facing-home {
+        max-height: max-content;
+    }
+
+    .text-md-left {
+        text-align: center;
+    }
+
+    .mb-md-0 {
+        margin-bottom: 0;
+    }
+
+    .qr-image {
+        max-width: 70%;
+    }
+}
+
+.lead {
+    margin-bottom: 15px;
+    animation: fadeInP 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInP {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
